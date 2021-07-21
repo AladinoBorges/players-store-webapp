@@ -1,4 +1,5 @@
 import { useContext, useEffect } from 'react';
+import { useHistory } from 'react-router';
 import axios from 'axios';
 
 import LoginForm from '../components/LoginForm';
@@ -10,11 +11,13 @@ import genericGetFromStorage from '../services/getFromLocalStorage';
 function Splash() {
   const { globalState, setGlobalState } = useContext(AppContext);
   const { genericSetToStorage } = setLocalFunctions;
+  const history = useHistory();
 
   // GLOBAL FUNCTIONS
   const setStorageAndState = (data) => {
     genericSetToStorage(data, 'gamesList');
-    setGlobalState({ ...globalState, listOfGames: data });
+    genericSetToStorage('convidado', 'username');
+    setGlobalState({ ...globalState, listOfGames: data.results });
   }
 
   const requestAPI = async (url) => {
@@ -33,7 +36,7 @@ function Splash() {
   useEffect(() => {
     const checkStorage = genericGetFromStorage('gamesList');
 
-    !checkStorage && requestAPI(gamesURL);
+    !checkStorage ? requestAPI(gamesURL) : history.push('/home');;
   }, []);
 
   return (
