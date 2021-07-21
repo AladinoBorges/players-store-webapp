@@ -1,0 +1,9 @@
+globalState: {
+  userName,
+  listOfGames,
+  filteredStatus,
+  filteredListOfGames,
+  filterBy,
+  favoriteGames,
+  gamesOnLocalStorage,
+},
