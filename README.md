@@ -19,3 +19,5 @@ A obtenão das informações sobre os jogos, produtoras, desenvolvedores, criado
 ### DESENVOLVIDO POR
 
 [Aladino Borges](https://www.linkedin.com/in/aladinoborges).
+
+Esta webapp é um desafio técnico recebido para uma vaga de trabalho como desenvolvedor frontend.
