@@ -1,6 +1,6 @@
-const genericSetToStorage = (info, string) => {
+const genericSetToStorage = (info, stringKey) => {
   const encoder = JSON.stringify(info); 
-  localStorage.setItem(string, encoder);
+  localStorage.setItem(stringKey, encoder);
 }
 
 const setFavoritesToStorage = (favorite) => {

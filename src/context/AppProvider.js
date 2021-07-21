@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import AppContext from './AppContext';
+import genericGetFromStorage from '../services/getFromLocalStorage';
 
 export default function AppProvider({ children }) {
   const [globalState, setGlobalState] = useState({
     userName: '',
-    listOfGames: {},
+    listOfGames: [],
     filteredStatus: false,
     filteredListOfGames: {},
     filterBy: '',
     favoriteGames : {},
-    gamesOnLocalStorage: false,
+    gamesOnLocalStorage: genericGetFromStorage('gamesList') ? true : false,
   });
 
   const context = { globalState, setGlobalState };
