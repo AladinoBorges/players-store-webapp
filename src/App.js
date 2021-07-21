@@ -1,13 +1,12 @@
 import AppProvider from './context/AppProvider';
+import Splash from './pages/SplashScreen';
 import './App.css';
 
 function App() {
   return (
     <AppProvider>
       <div className="App">
-        <header className="App-header">
-          HELLO
-        </header>
+        <Splash />
       </div>
     </AppProvider>
   );
