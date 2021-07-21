@@ -14,7 +14,7 @@ A obtenão das informações sobre os jogos, produtoras, desenvolvedores, criado
 - Hooks: para trabalhar com os estados e ciclos de vida ;
 - Context API: para gerir o estado global;
 - Axios: para requisições API.
-- Material UI: para o design da interface do usuário;
+- Material UI: para o design da interface do usuário.
 
 ### DESENVOLVIDO POR
 
