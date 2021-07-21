@@ -4,6 +4,7 @@ import AppContext from './AppContext';
 
 export default function AppProvider({ children }) {
   const [globalState, setGlobalState] = useState({
+    userName: '',
     listOfGames: {},
     filteredStatus: false,
     filteredListOfGames: {},
