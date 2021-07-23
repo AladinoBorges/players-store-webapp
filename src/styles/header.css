@@ -1,0 +1,17 @@
+header {
+  align-items: center;
+  background-color: rgb(11, 7, 29);
+  border-radius: 0 0 4px 4px;
+  color: whitesmoke;
+  cursor: pointer;
+  display: flex;
+  height: 46px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 95vw;
+}
+
+.header_container {
+  height: 100%;
+  width: 100%;
+}

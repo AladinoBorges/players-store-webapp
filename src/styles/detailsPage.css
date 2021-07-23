@@ -1,3 +1,7 @@
+main {
+  margin: 0 auto;
+}
+
 .game_details {
   align-items: center;
   display: flex;
@@ -9,6 +13,7 @@
 }
 
 .details_cover_image_container {
+  border-radius: 0 0 4px 4px;
   height: 75%;
   overflow: hidden;
   width: 75%;

@@ -1,12 +1,13 @@
 .cards_container {
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 98vw;
 }
 .cards {
-  border: 1px solid rgba(0, 28, 41, 0.37);
-  border-radius: 5px;
+  border: 3px solid rgba(11, 7, 29, 0.158);
+  border-radius: 4px;
   height: 400px;
   margin: 8px 5px;
   width: 430px;
@@ -21,7 +22,7 @@
 }
 
 .card_img {
-  border-radius: 5px 5px 0 0;
+  border-radius: 2px 2px 0 0;
   height: 100%;
   width: 100%;
   object-fit: cover;
