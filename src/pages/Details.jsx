@@ -2,6 +2,8 @@ import { useContext } from 'react';
 import { useHistory } from 'react-router';
 
 import AppContext from '../context/AppContext';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import '../styles/detailsPage.css';
 
 function Details() {
@@ -24,6 +26,7 @@ function Details() {
 
   return (
     <div>
+      <Header page={ 'GAME DETAILS' } />
       <main className="game_details">
         <div className="details_cover_image_container">
           <img

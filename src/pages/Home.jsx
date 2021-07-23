@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import AppContext from '../context/AppContext';
 import Header from '../components/Header';
-import NavBar from '../components/Navbar';
 import GameCard from '../components/GameListCard';
 import Footer from '../components/Footer';
 import Loading from '../components/Loading';
@@ -57,7 +56,6 @@ function Home() {
         : (
         <div>
           <Header page={'HOME'} />
-          <NavBar />
           <section className="cards_container">
             {listToRender.map(({ id, background_image, name, slug, released, rating, platforms }, index) => (
               <GameCard

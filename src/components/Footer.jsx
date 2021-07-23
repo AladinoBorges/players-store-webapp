@@ -1,7 +1,9 @@
+import '../styles/footer.css';
+
 function Footer() {
   return (
     <footer>
-      FOOTER
+      <p className="copyright">2021 - ALBORS</p>
     </footer>
   );
 }

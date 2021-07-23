@@ -1,11 +1,18 @@
-import genericGetFromStorage from '../services/getFromLocalStorage';
+import { useHistory } from 'react-router';
 
-function Header() {
-  const username = genericGetFromStorage('username');
+import '../styles/header.css';
 
+function Header({ page }) {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push('/');
+  }
   return (
     <header>
-      { `É bom ter-te por aqui, ${username}.` }
+      <div onClick={ handleClick }>
+        { page }
+      </div>
     </header>
   );
 }
