@@ -5,6 +5,7 @@
 }
 
 .App {
+  background-color: rgba(7, 28, 29, 0.034);
   display: flex;
   justify-content: center;
   text-align: center;

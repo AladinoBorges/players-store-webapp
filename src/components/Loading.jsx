@@ -1,7 +1,11 @@
+import CircularProgress from '@material-ui/core/CircularProgress';
+
+import '../styles/loadingPage.css';
+
 function Loading() {
   return(
-    <div>
-      LOADING ...
+    <div className="loading_page">
+      <CircularProgress />
     </div>
   );
 }

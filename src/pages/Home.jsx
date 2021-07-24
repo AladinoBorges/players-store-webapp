@@ -1,6 +1,8 @@
 import { useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
+import Button from '@material-ui/core/Button';
+
 import AppContext from '../context/AppContext';
 import Header from '../components/Header';
 import GameCard from '../components/GameListCard';
@@ -13,7 +15,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   const { listOfGames, next } = globalState;
-  const loadTime = 4500; // 4500
+  const loadTime = 3500; // 4500
 
   const requestAPI = async (url) => {
     try {
@@ -68,13 +70,14 @@ function Home() {
                 rating={ rating }
                 platforms={ platforms }
               />))}
-          <button
+          </section>
+          <Button
+            variant="outlined"
             type="button"
             onClick={ handleClick }
           >
             MORE GAMES
-          </button>
-          </section>
+          </Button>
           <Footer />
         </div>
       )}

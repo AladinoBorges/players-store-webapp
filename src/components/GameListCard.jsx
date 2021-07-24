@@ -40,11 +40,11 @@ function GameCard({ id, name, index, background_image, slug, released, rating, p
         <img className="card_img" src={ background_image } alt={ `${slug} cover` } />
       </div>
       <div className="card_text_container">
-        <h2>{ name }</h2>
-        <p>{ `Lançamento: ${released.replace(/-/g, ' - ')}` }</p>
-        <p>{ `Avaliação: ${rating}` }</p>
+        <h3 className="title">{ name }</h3>
+        <p>{ `${released.replace(/-/g, ' - ')}` }</p>
+        <p>{ `Rating - ${rating}` }</p>
         <div className="platforms_container">
-          <h4>PLATAFORMAS:</h4>
+          <h4>PLATFORMS</h4>
           <p>
             { platforms.map(({platform: { name, slug }}) => (
               <span key={ slug }>{ `${name} ` }</span>

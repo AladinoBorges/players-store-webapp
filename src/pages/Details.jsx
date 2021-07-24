@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { useHistory } from 'react-router';
 
+import Button from '@material-ui/core/Button';
+
 import AppContext from '../context/AppContext';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -55,11 +57,13 @@ function Details() {
           <p>{ description_raw.replace(/###/g, ' ') }</p>
         </article>
       </main>
-      <button
+      <Button
+        variant="outlined"
         onClick={ handleClick }
         >
         HOME
-      </button>
+      </Button>
+      <Footer />
     </div>
   );
 }
