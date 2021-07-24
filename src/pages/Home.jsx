@@ -15,7 +15,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   const { listOfGames, next } = globalState;
-  const loadTime = 3500; // 4500
+  const loadTime = 2500; // 4500
 
   const requestAPI = async (url) => {
     try {
