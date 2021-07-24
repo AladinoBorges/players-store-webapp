@@ -1,21 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import AppContext from './AppContext';
+import gamesURL from '../services/service';
 
 export default function AppProvider({ children }) {
   const [globalState, setGlobalState] = useState({
-    listOfGames: {},
-    filteredStatus: false,
-    filteredListOfGames: {},
-    filterBy: '',
-    favoriteGames : {},
-    gamesOnLocalStorage: false,
+    listOfGames: [],
+    next: gamesURL,
+    gameInfo: []
   });
-
   const context = { globalState, setGlobalState };
-
-  // COMPONENT DID UPDATE?
-  useEffect(() => {}, []);
 
   return (
     <AppContext.Provider value={ context }>

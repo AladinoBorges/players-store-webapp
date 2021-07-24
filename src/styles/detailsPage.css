@@ -1,0 +1,45 @@
+main {
+  margin: 0 auto;
+}
+
+.game_details {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 13px;
+  min-height: 100vh;
+  width: 90vw;
+}
+
+.details_cover_image_container {
+  border-radius: 0 0 4px 4px;
+  height: 75%;
+  overflow: hidden;
+  width: 75%;
+}
+
+.details_cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.details_heading {
+  margin: 13px 0;
+}
+
+.details_info_container {
+  margin: 13px 0;
+  text-align: left;
+  width: 75%;
+}
+
+.spans {
+  margin-left: 5px;
+}
+
+.game_description {
+  text-align: left;
+  width: 75%;
+}

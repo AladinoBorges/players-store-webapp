@@ -14,8 +14,10 @@ A obtenão das informações sobre os jogos, produtoras, desenvolvedores, criado
 - Hooks: para trabalhar com os estados e ciclos de vida ;
 - Context API: para gerir o estado global;
 - Axios: para requisições API.
-- Material UI: para o design da interface do usuário;
+- Material UI: para o design da interface do usuário.
 
 ### DESENVOLVIDO POR
 
 [Aladino Borges](https://www.linkedin.com/in/aladinoborges).
+
+Esta webapp é um desafio técnico recebido para uma vaga de trabalho como desenvolvedor frontend.

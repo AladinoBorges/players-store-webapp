@@ -1,15 +1,19 @@
+import { Switch, Route } from 'react-router-dom';
 import AppProvider from './context/AppProvider';
+import Details from './pages/Details';
+import Home from './pages/Home';
 import './App.css';
 
 function App() {
   return (
-    <AppProvider>
-      <div className="App">
-        <header className="App-header">
-          HELLO
-        </header>
-      </div>
-    </AppProvider>
+    <div className="App">
+      <AppProvider>
+        <Switch>
+          <Route exact path="/" component={ Home } />
+          <Route exact path="/game/:id" component={ Details } />
+        </Switch>
+      </AppProvider>
+    </div>
   );
 }
 
